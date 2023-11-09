@@ -1,5 +1,5 @@
 
-public class MainAccount implements Account {
+public class MainAccount {
 
 	private double balance;
 	private String owner;
@@ -13,20 +13,17 @@ public class MainAccount implements Account {
 	public MainAccount() {
 	}
 
-	@Override
 	public double checkBalance() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
 	public void withdraw(double sumtowithdraw) {
 		// TODO Auto-generated method stub
 		balance -= sumtowithdraw;
 
 	}
 
-	@Override
 	public void TopUp() {
 		// TODO Auto-generated method stub
 

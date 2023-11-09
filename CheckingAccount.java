@@ -11,15 +11,9 @@ public class CheckingAccount extends MainAccount {
 	}
 
 	@Override
-	public double checkBalance() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void withdraw(double sumtowithdraw) {
 		// TODO Auto-generated method stub
-
+		double balance = super.getBalance();
 		if (sumtowithdraw > balance) {
 			System.out.println("Insuficient funds");
 		} else {
@@ -33,13 +27,8 @@ public class CheckingAccount extends MainAccount {
 			}
 
 		}
+		super.setBalance(balance);
 
-	}
-
-	@Override
-	public void TopUp() {
-		// TODO Auto-generated method stub
-		//
 	}
 
 	public int getTransactionnumber() {
